@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    
+        #aboutsection{
+            display: flex;
+            text-align: center;
+         
+        }
+        #aboutsection>div{
+            margin-left: 20px;
+            margin-right: 20px;
+           
+        
+        }
+        #aboutsection>div:hover{
+            color: blue;
+            cursor: pointer;
+        }
+        #name:hover{
+            color: rgb(123, 92, 143);
+            cursor: pointer;
+
+        }
+        #gapperpose{
+            height: 180px;
+            width: 100%;
+            /* border: 1px solid coral; */
+            margin-bottom: 40px;
+        }
+        #about{
+            height: 500px;
+            width: 100%;
+            /* border: 1px solid chartreuse; */
+            display: flex;
+            justify-content: space-around;
+          
+            
+        }
+        #aboutsection1{
+            height:90%px;
+            width: 40%;
+            /* border: 1px solid coral; */
+            padding: auto;
+
+            background-image: url("https://www.freecodecamp.org/news/content/images/size/w2000/2021/07/kobu-agency-ipARHaxETRk-unsplash.jpg");
+             padding: auto;
+             background-position:top center;
+            
+            
+           
+        }
+        #sumerysection{
+            height:90%px;
+            width: 35%;
+            /* border: 1px solid crimson; */
+           
+          
+        }
+      
+       
+        #forimage{
+            height: 45%;
+            width: 45%;
+            /* border: 1px solid rgb(52, 92, 13); */
+            border-radius: 50%;
+            margin:5%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #image21{
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+        #Hcontent{
+            /* height: 20%; */
+            height: auto;
+            width: auto;
+            /* border:1px solid chartreuse; */
+            margin-left: 40%;
+            margin-top: 20%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #Hcontent>p{
+            margin-top: -10%;
+            font-weight: bold;
+        }
+        #introduction{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 10%;
+        }
+        #introduction>p{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+           
+
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        #effect{
+            height: 200px;
+            width: 88%;
+          
+           margin: auto;
+           margin-top: 2cm;
+           text-align: center;
+           align-items: center;
+           box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+           
+        }
+        #skills{
+            height: 80%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        #skills>div{
+            height:80px;
+            width: 80px;
+            /* border:1px solid darkred; */
+            /* margin: 2cm; */
+            
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+        #skills>div:hover{
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+
+        }
+       
+        
+      nav{
+        
+        top: 0%;
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        background: #607d8b;
+        padding: 0 100px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.5s;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      }
+      ul{
+        margin: 0;
+        padding: 0;
+      
+        display: flex;
+      }
+      ul li{
+        list-style: none;
+    }
+    ul li a{
+        padding: 0 20px;
+        font-size: 1.1em;
+    }
+    .brand{
+        font-size: 1.1em;
+        list-style: none;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    #abountme{
+        margin-left: 1cm;
+        margin-right: 1cm;
+        font-family: 'Courier New', Courier, monospace;
+        /* align-items: center; */
+    }
+    #abountme>p{
+        /* align-items: center; */
+        text-align: center;
+    
+    }
+    #abountme>h3{
+        margin-bottom: -0.5cm;
+    }
+    #sect1{
+        height: 700px;
+        width: 100%;
+        border: 1px solid darkgreen;
+        
+    }
+    li>a:hover{
+        cursor: pointer;
+    }
+    #effect>h1{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgb(10, 9, 59);
+    }
+    #skills>div>img{
+        height: 100%;
+        width: 100%;
+    }
+  
+     #logosection{
+        height: 150px;
+        width: 50%;
+        /* border: 1px solid chocolate; */
+        display: flex;
+        justify-content: space-around;
+        background-image: url("https://www.freecodecamp.org/news/content/images/size/w2000/2021/07/kobu-agency-ipARHaxETRk-unsplash.jpg");
+        padding: auto;
+     }
+     #project{
+        height: 550px;
+        width: 95%;
+        /* border: 3px solid coral; */
+        
+        margin: auto;
+        margin-top: 2cm;
+        padding:0.5cm;
+        text-align: center;
+        padding-bottom: 0px;
+     
+     }
+     #project>h1{
+        color: rgb(48, 7, 66);
+        font-family: Arial, Helvetica, sans-serif;
+     }
+     #project>h1:hover{
+        color: rgb(80, 63, 175);
+        cursor: pointer;
+     }
+     #projectsection1{
+        display: flex;
+        justify-content: space-between;
+
+     }
+     #projectsection1>div{
+        
+        height: 550px;
+        width:24%;
+        /* border: 1px solid crimson; */
+        text-align: center;
+        /* padding: 0.2cm; */
+        margin: 0.4cm;
+     }
+     #projectsection1>div>h3{
+        font-family: Arial, Helvetica, sans-serif;
+     }
+     #projectsection1>div>p{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+     }
+     #projectsection1>div>a{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight:bold;
+        color: rgb(95, 9, 112);
+      
+        
+     }
+     #projectsection1>div>img{
+        height: 40px;
+        width: 40px;
+     }
+     #lsk{
+        height: 400px;
+        width: 90%;
+        /* border: 1px solid coral; */
+        margin: auto;
+        display: flex;
+        margin-top: 2cm;
+        justify-content: space-around;
+        
+        align-items: center;
+        /* margin-top:2cm; */
+     }
+     #lsk>div{
+        height: 250px;
+        width: 45%;
+        /* border: 1px solid crimson; */
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+       
+       
+     }
+     #lsk>div>h1{
+        
+        color: rgb(95, 9, 112);
+     }
+     #projectsection1>div>h3:hover{
+        color: rgb(20, 46, 95);
+        cursor: pointer;
+     }
+     #projectsection1>div>p:hover{
+        color: rgb(61, 20, 88);
+        cursor: pointer;
+     }
+     #lsk>div>h1:hover{
+        color: rgb(129, 25, 160);
+        cursor: pointer;
+     }
+     #lsk>div>div>h3:hover{
+        color: purple;
+        cursor: pointer;
+     }
+     #interst{
+        height: 200px;
+        width: 90%;
+        /* border: 1px solid coral; */
+        margin: auto;
+        text-align: center;
+         /* margin-top: 2cm; */
+     }
+     #interst>h2{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color: rgb(37, 104, 46);
+
+     }
+     #interstsection{
+        height:50px;
+        width: 100%;
+        /* border: 1px solid chocolate; */
+        display: flex;
+        justify-content: space-around;
+     }
+     #interstsection>div>h3{
+        font-family:'Courier New', Courier, monospace;
+     }
+     #intrestimage{
+        height: 350px;
+        width: 100%;
+        /* border: 1px solid chartreuse; */
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+     }
+     #intrestimage>div{
+        height:350px;
+        width: 30%;
+      
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+     }
+     #intrestimage>div>img{
+        height: 100%;
+        width: 100%;
+   
+     }
+     #nm>img{
+        height: 100%;
+        width: 100%;
+     }
+     #intrestimage>div>img:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+     }
+     #contact{
+        height: 200px;
+        width: 100%;
+        background: #607d8b;
+        /* margin-top: 3cm; */
+       
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+       
+       
+     }
+    
+     
+    
+    #id1{
+        height:50%;
+        width: 90%;
+        /* border: 1px solid salmon; */
+        margin: auto;
+        display: flex;
+       
+
+    }
+    #id2{
+        height:50%;
+        width: 90%;
+        /* border: 1px solid rgb(59, 172, 24); */
+        margin: auto;
+        display: flex;
+    }
+    #id1>div{
+        height: 60%;
+        width:45%;
+        /* border: 1px solid crimson; */
+        /* margin-top: 0.4cm; */
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+    }
+    #id2>div{
+        height: 60%;
+        width:45%;
+        /* border: 1px solid crimson; */
+        /* margin-top: 0.4cm; */
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+       
+
+    }
+    #id1>div>img{
+        height: 100%;
+        width: 40px;
+        margin-right: 0.5cm;
+       /* border-radius: 50%; */
+    }
+    #id1>div>h1{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    #id2>div>img{
+        height: 100%;
+        width: 40px;
+        margin-right: 0.5cm;
+       /* border-radius: 50%; */
+    }
+    #id2>div>h1{
+        font-family: 'Courier New', Courier, monospace;
+    }
+   #id3{
+    font-family:'Courier New', Courier, monospace;
+
+   }
+   #id4{
+    font-family: 'Courier New', Courier, monospace;
+    /* width: 70%; */
+   }
+
+  #mahesh{
+       font-size: larger;
+       font-family: 'Courier New', Courier, monospace;
+  }
+  #hed{
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  #button{
+    background-color: rgb(131, 105, 204);
+
+  }
+
+  #projectsection1>div>h3+img{
+    height: 200px;
+    width:100%;
+  }
+
+  #contectsection{
+    height: 30px;
+    width: 50%;
+    /* border: 1px solid color red;
+    background-color: rebeccapurple; */
+    margin-bottom: 1cm;
+    display: flex;
+    justify-content: space-around;
+  }
+  #contectsection>div{
+    height: 30px;
+    width: 20%;
+    /* background-color: black; */
+  }
+  #contectsection>div>img{
+    height: 100%;
+
+    width: 100%;
+    cursor: pointer;
+  }
+
+    </style>
+</head>
+<body>
+    <nav>
+      <li>  <a href="" class="brand">MAHESHWAR SAHNI</a></li>
+        <ul>
+         <li><a data-link="abountme" class="scroll">ABOUT ME</a></li>
+         <li><a data-link="resumed" class="scroll">RESUME</a></li>
+         <li><a  data-link="project" class="scroll">PROJECT</a></li>
+         <li><a  data-link="contact" class="scroll">CONTACT</a></li>
+        </ul>
+       
+    </nav>
+    <!-- <div id="navbar" data-spy="affix" data-offset-top="197">
+    </div> -->
+    <div id="gapperpose"></div>
+    <div id="about">
+        <div id="aboutsection1">
+            <div id="Hcontent"><h1>Hello</h1><br>
+           <p id="mahesh">I'm Maheshwar Sahni</p><br>
+           <p id="hed">Full Stack Web Developer</p>
+           <!-- <h2></h2> -->
+       
+       
+            <button id="button">    <a id="resumed" href="https://drive.google.com/uc?export=download&id=1FEXmuNaoqxb29zha08LrJf6VQ_WpuT19">DOWNLOAD_RESUME</a></button>
+            </div>
+            
+            <div>
+                <div id="abountme">  <h3>ABOUT ME</h3> <br>
+                    <p>A passionate programmer with the ability to learn quickly and implement and also  versatile enough to learn and work  in new environment  
+                        currently looking for an opportunity to work for an organization where I can contribute  my 
+                        skills and manage key project that impact the organization  as well as broaden my scope  
+                        of learning from the organization's team members. <br>
+                        My personal interest lies in playing football, animal care and helping others.
+                        </p>
+                       
+                 </div>
+            </div>
+            <div></div>
+        </div>
+        <div id="sumerysection">
+            <div id="forimage">
+             
+                <img id="image21" src="https://i.ibb.co/YLkcQKc/imgonline-com-ua-resize-pees6-Bpg83.jpg" alt="">
+              
+                
+            </div>
+            <div id="introduction"> 
+                <h2 id="par">Maheshwar Sahni</h2>
+                 <div id="contectsection">  
+                    <div><img id="twiter" src="https://e7.pngegg.com/pngimages/617/28/png-clipart-twitter-logo-blue-sky-wing-beak-font-twitter-blue-social-media.png" alt=""></div>
+                    <div><img id="linkdlin" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png" alt=""></div>
+                    <div><img id="instagram" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt=""></div>
+                    <div><img id="github" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSFYUzq5Fn-C8IZ8AFuapPX_mf3HqwEdlzedMiSHPyYoBgGJiNRcW4&usqp=CAE&s" alt=""></div>
+                </div>
+               
+                <div id="logosection">
+                    <img src="https://image.shutterstock.com/image-photo/side-view-three-artists-working-600w-168161765.jpg" alt="">
+                    
+                </div>
+            </div>
+           
+           
+        </div>
+
+    </div>
+    
+    <div id="effect">
+        <h1>Technical Skills</h1>
+       <div id="skills">
+        <div><img src="	https://cdn-icons-png.flaticon.com/512/888/888847.png" alt=""></div>
+        <div><img  src="https://nodejs.org/static/images/logos/nodejs-new-pantone-white.svg" alt=""></div>
+        <div> <img src="https://t4.ftcdn.net/jpg/04/39/23/57/240_F_439235780_wShMUJqOR8Tsbfm4qlSd93NNxkqmRLqD.jpg" alt=""></div>
+        <div><img src="https://static.javatpoint.com/core/images/java-logo3.png" alt=""></div>
+       
+         
+         <div><img src="https://www.code-intelligence.com/hubfs/Fuzzing%20Java%20Microservices%20in%20Spring%20Boot.webp" alt=""></div>
+         <div><img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/344/external-sql-computer-programming-flaticons-lineal-color-flat-icons.png" alt=""></div>
+         <div><img src="https://cdn.dribbble.com/users/6569/screenshots/16742885/media/361dccdf11984b210043e69cb871fc93.png?compress=1&resize=400x300&vertical=top" alt=""></div> 
+    </div>
+
+    </div>
+
+    <div id="project">
+          <h1>Project</h1>
+          <div id="projectsection1">
+            <div>
+                <h3>Bath and Body care</h3>
+                <img  src="https://i.ibb.co/V2fLyBM/Screenshot-158.png" alt="">
+                <p>An online Shopping App that brings to users to the latest product.
+                     It was Collaborative project
+                    accomplished with a team of 4 developers completed in 5 days by using CSS, HTML, JavaScript . <br>
+                    Role:- Implement the frontend and create the payment section</p>
+                    <a href="https://wonderful-jelly-712b86.netlify.app/">Click_here To Visit_Project</a><br>
+                    <img id="git" src="	https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="">
+                  
+            </div>
+            <div>
+                <h3>Mini Youtube App</h3>
+                <img  src="https://i.ibb.co/VgLR0zc/Screenshot-159.png" alt="">
+                <p>A Mini Youtube app where people can watch movies ,songs without any advertisement. <br>
+                    Role :- fetched  Youtube API and implemented youtube aap.
+                    </p>
+                    <a id="project22" href="https://boisterous-sprinkles-aa9429.netlify.app">Click_here To Visit_Project</a><br>
+                    <img id="p2" src="	https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="">
+            </div>
+            <div><h3>Hindistan News App</h3>
+                <img  src="https://i.ibb.co/jvFChvD/Screenshot-160.png" alt="">
+                <p>A news App that brings to users to the latest news analysis from all over the world. It was Collaborative project accomplished with a team of 5 developers completed in 4 days by using CSS, HTML, JavaScript <br>
+                    Role:- Implemented the frontend and create news API
+                </p>
+                <a id="project22" href="https://hindustan-times-clone.netlify.app/">Click_here To Visit_Project</a><br>
+                    <img id="p3" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="">
+            </div>
+            <div><h3>Masai Evaluation Report</h3>
+                <img  src="https://i.ibb.co/M8GLXTn/Screenshot-161.png" alt="">
+                <p>A Masai School student evaluation report card app.
+                      It accept all the details of the student as an input and give the report card as an output. <br>
+                   tech-stack: CSS, HTML, JavaScript . <br>
+                    Role:- Implemented the frontend </p>
+                    <a href="https://euphonious-marshmallow-e4cee3.netlify.app/">Click_here To Visit_Project</a><br>
+                    <!-- <img id="git" src="	https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt=""> -->
+            </div>
+         
+          </div>
+       
+          
+    </div>
+
+    <div id="lsk">
+        <div>
+         <h1>Soft Skills</h1>
+        <div> <h3>REMOTE COLLABORATION ***</h3></div>
+         <div>  <h3>TIME MANAGEMENT ****</h3></div>
+         <div><h3>TEAM WORK ****</h3></div>
+         <div><h3>POSITIVITY ****</h3></div>
+        </div>
+        <div>
+          <h1>Language</h1>
+          <div> <h3>ENGLISH ***</h3></div>
+          <div>  <h3>HINDI *****</h3></div>
+          <div><h3>NEPALI ****</h3></div>
+          <div><h3>MATHALI *****</h3></div>
+        </div>
+    </div>
+    <div id="interst">
+        <h2>INTREST</h2>
+        <div id="interstsection">
+              <div><h3>Cricket</h3></div>
+              <div><h3>Animal Care</h3></div>
+             <div><h3>Helping Other's</h3></div>
+        </div>
+        <!-- <div id="intrestimage">
+            
+            <div>
+                <img src="https://cdn.pixabay.com/photo/2016/11/08/05/18/football-1807520_960_720.jpg" alt="">
+            </div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgP1arPRDxFkFKpii1soHtUmhHRpMkcwIrSA&usqp=CAU" alt=""></div>
+            <div><img src="https://img.freepik.com/premium-photo/teamwork-two-men-travelers-help-each-other-top-mountain-climbing-team_38076-133.jpg?w=2000" alt=""></div>
+        </div> -->
+      
+    </div>
+
+    <div id="contact">
+        <div id="id1">
+            <div>
+                <img src="https://img.icons8.com/ios/344/phone-disconnected.png" alt="">
+               <h1>+91 7667291394</h1>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="">
+                <h1>mkumar7667291394@gmail.com</h1>
+            </div>
+        </div>
+        <div id="id2">
+            <div>
+                <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="">
+             <h3 id="id4">https://github.com/maheshwar7667291394</h3>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/ios/344/linkedin-circled--v4.png" alt="">
+              <h3 id="id3">https://www.linkedin.com/in/maheshwar-sahni-18928b21b/</h3>
+            </div>
+        </div>
+    </div>
+  
+          
+    
+</body>
+</html>
+<script>
+    
+const links=document.querySelectorAll(".scroll");
+// console.log(links);
+links.forEach((item)=>{
+    item.addEventListener("click",()=>{
+        const el=document.getElementById(item.getAttribute("data-link"));
+        el.scrollIntoView({
+            behavior:"smooth",block:"center"
+           
+        })
+    })
+})
+ document.querySelector("#git").addEventListener("click",()=>{
+    window.location.href="https://github.com/Vaibhav2416/BathBodyWorks";
+ })
+ document.querySelector("#p2").addEventListener("click",()=>{
+    window.location.href="https://github.com/Vaibhav2416/BathBodyWorks";
+    
+ })
+
+ document.querySelector("#p3").addEventListener("click",()=>{
+    window.location.href="https://github.com/mrFarooque/HindustanNews";
+ })
+ document.querySelector("#linkdlin").addEventListener("click",()=>{
+    window.location.href="https://www.linkedin.com/in/maheshwar-sahni-18928b21b/";
+
+ })
+ document.querySelector("#instagram").addEventListener("click",()=>{
+    window.location.href="https://www.instagram.com/maheshP_1218/";
+ })
+
+ document.querySelector("#github").addEventListener("click",()=>{
+   window.location.href="https://github.com/maheshwar7667291394";
+ })
+ document.querySelector("#twiter").addEventListener("click",()=>{
+   window.location.href="https://twitter.com/MaheshB41963552";
+ })
+    
+</script>
